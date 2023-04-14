@@ -20,8 +20,8 @@ colorButton.addEventListener("click", changeColor);
 
 function changeColor(e){
     color = colorInput.value;
-    console.log(color)
-    if(e == colorButton){
+
+    if(e.target == colorButton){ //e.target specifiec the target of the event
         frame.style.backgroundColor = String(color);
     }
 
